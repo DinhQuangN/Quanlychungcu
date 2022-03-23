@@ -35,3 +35,7 @@ E:\Microsoft Visual Studio\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.h
 E:\Microsoft Visual Studio\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.csproj.ResolveComReference.cache
 E:\Microsoft Visual Studio\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.Thongkeluongnhanvie.resources
 E:\Microsoft Visual Studio\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.thongkekhachhangdamuacanho.resources
+E:\Microsoft Visual Studio\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.Tracuunhanvien.resources
+E:\Microsoft Visual Studio\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.tracuukhachhang.resources
+E:\Microsoft Visual Studio\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.dangki.resources
+E:\Microsoft Visual Studio\QuanLyChungCu\QuanLyChungCu\obj\Debug\QuanLyChungCu.dangnhap.resources

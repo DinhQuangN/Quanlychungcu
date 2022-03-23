@@ -47,17 +47,24 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.kryptonButton8 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel10 = new System.Windows.Forms.Panel();
             this.kryptonButton7 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonButton8 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.kryptonButton10 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonButton9 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -266,15 +273,14 @@
             this.tabPage2.Text = "Thống kê";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // panel11
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 37);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1151, 515);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Tra cứu";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel11.Location = new System.Drawing.Point(3, 81);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(1145, 431);
+            this.panel11.TabIndex = 1;
             // 
             // panel9
             // 
@@ -284,15 +290,28 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(3, 3);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1145, 100);
+            this.panel9.Size = new System.Drawing.Size(1145, 78);
             this.panel9.TabIndex = 0;
+            // 
+            // kryptonButton8
+            // 
+            this.kryptonButton8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.kryptonButton8.Location = new System.Drawing.Point(321, 0);
+            this.kryptonButton8.Name = "kryptonButton8";
+            this.kryptonButton8.Palette = this.kryptonPalette1;
+            this.kryptonButton8.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.kryptonButton8.Size = new System.Drawing.Size(370, 78);
+            this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton8.TabIndex = 14;
+            this.kryptonButton8.Values.Text = "Thống kê khách hàng đã mua căn hộ\r\n";
+            this.kryptonButton8.Click += new System.EventHandler(this.kryptonButton8_Click);
             // 
             // panel10
             // 
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel10.Location = new System.Drawing.Point(291, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(30, 100);
+            this.panel10.Size = new System.Drawing.Size(30, 78);
             this.panel10.TabIndex = 13;
             // 
             // kryptonButton7
@@ -302,32 +321,77 @@
             this.kryptonButton7.Name = "kryptonButton7";
             this.kryptonButton7.Palette = this.kryptonPalette1;
             this.kryptonButton7.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonButton7.Size = new System.Drawing.Size(291, 100);
+            this.kryptonButton7.Size = new System.Drawing.Size(291, 78);
             this.kryptonButton7.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton7.TabIndex = 12;
             this.kryptonButton7.Values.Text = "Thống kê lương nhân viên";
             this.kryptonButton7.Click += new System.EventHandler(this.kryptonButton7_Click);
             // 
-            // kryptonButton8
+            // tabPage3
             // 
-            this.kryptonButton8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.kryptonButton8.Location = new System.Drawing.Point(321, 0);
-            this.kryptonButton8.Name = "kryptonButton8";
-            this.kryptonButton8.Palette = this.kryptonPalette1;
-            this.kryptonButton8.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonButton8.Size = new System.Drawing.Size(370, 100);
-            this.kryptonButton8.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton8.TabIndex = 14;
-            this.kryptonButton8.Values.Text = "Thống kê khách hàng đã mua căn hộ\r\n";
-            this.kryptonButton8.Click += new System.EventHandler(this.kryptonButton8_Click);
+            this.tabPage3.Controls.Add(this.panel14);
+            this.tabPage3.Controls.Add(this.panel12);
+            this.tabPage3.Location = new System.Drawing.Point(4, 37);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1151, 515);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Tra cứu";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // panel11
+            // panel12
             // 
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(3, 103);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1145, 409);
-            this.panel11.TabIndex = 1;
+            this.panel12.Controls.Add(this.kryptonButton9);
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Controls.Add(this.kryptonButton10);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel12.Location = new System.Drawing.Point(3, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1145, 78);
+            this.panel12.TabIndex = 1;
+            // 
+            // panel13
+            // 
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel13.Location = new System.Drawing.Point(201, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(30, 78);
+            this.panel13.TabIndex = 13;
+            // 
+            // kryptonButton10
+            // 
+            this.kryptonButton10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.kryptonButton10.Location = new System.Drawing.Point(0, 0);
+            this.kryptonButton10.Name = "kryptonButton10";
+            this.kryptonButton10.Palette = this.kryptonPalette1;
+            this.kryptonButton10.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.kryptonButton10.Size = new System.Drawing.Size(201, 78);
+            this.kryptonButton10.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton10.TabIndex = 12;
+            this.kryptonButton10.Values.Text = "Tra cứu nhân viên\r\n";
+            this.kryptonButton10.Click += new System.EventHandler(this.kryptonButton10_Click);
+            // 
+            // kryptonButton9
+            // 
+            this.kryptonButton9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.kryptonButton9.Location = new System.Drawing.Point(231, 0);
+            this.kryptonButton9.Name = "kryptonButton9";
+            this.kryptonButton9.Palette = this.kryptonPalette1;
+            this.kryptonButton9.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.kryptonButton9.Size = new System.Drawing.Size(280, 78);
+            this.kryptonButton9.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton9.TabIndex = 14;
+            this.kryptonButton9.Values.Text = "Tra cứu khách hàng";
+            this.kryptonButton9.Click += new System.EventHandler(this.kryptonButton9_Click);
+            // 
+            // panel14
+            // 
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel14.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel14.Location = new System.Drawing.Point(3, 81);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1145, 431);
+            this.panel14.TabIndex = 2;
             // 
             // Form1
             // 
@@ -348,6 +412,8 @@
             this.panel2.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -378,6 +444,11 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton7;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton8;
         private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel12;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton9;
+        private System.Windows.Forms.Panel panel13;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton10;
+        private System.Windows.Forms.Panel panel14;
     }
 }
 

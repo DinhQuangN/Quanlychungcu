@@ -102,5 +102,36 @@ namespace QuanLyChungCu
         {
             AbrirFormularioTK<thongkekhachhangdamuacanho>();
         }
+
+        private void AbrirFormularioTC<MiForm>() where MiForm : KryptonForm, new()
+        {
+            KryptonForm formulario;
+            formulario = panel14.Controls.OfType<MiForm>().FirstOrDefault();
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                panel14.Controls.Add(formulario);
+                panel14.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+
+        private void kryptonButton10_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioTC<Tracuunhanvien>();
+        }
+
+        private void kryptonButton9_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioTC<tracuukhachhang>();
+        }
     }
 }

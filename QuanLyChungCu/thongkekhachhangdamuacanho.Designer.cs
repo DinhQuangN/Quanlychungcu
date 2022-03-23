@@ -38,6 +38,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txttong = new System.Windows.Forms.TextBox();
             this.dgvthongke = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.tenkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tencanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dientich = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaythanhtoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbbluachon)).BeginInit();
             this.panel2.SuspendLayout();
@@ -130,6 +138,15 @@
             // 
             this.dgvthongke.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvthongke.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvthongke.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tenkh,
+            this.sdt,
+            this.cmnd,
+            this.tencanho,
+            this.dientich,
+            this.gia,
+            this.ngaythanhtoan,
+            this.tenhd});
             this.dgvthongke.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvthongke.Location = new System.Drawing.Point(0, 100);
             this.dgvthongke.Name = "dgvthongke";
@@ -137,6 +154,54 @@
             this.dgvthongke.RowTemplate.Height = 24;
             this.dgvthongke.Size = new System.Drawing.Size(982, 308);
             this.dgvthongke.TabIndex = 2;
+            // 
+            // tenkh
+            // 
+            this.tenkh.DataPropertyName = "tenkh";
+            this.tenkh.HeaderText = "Tên khách hàng";
+            this.tenkh.Name = "tenkh";
+            // 
+            // sdt
+            // 
+            this.sdt.DataPropertyName = "sdt";
+            this.sdt.HeaderText = "SDT";
+            this.sdt.Name = "sdt";
+            // 
+            // cmnd
+            // 
+            this.cmnd.DataPropertyName = "cmnd";
+            this.cmnd.HeaderText = "CMND";
+            this.cmnd.Name = "cmnd";
+            // 
+            // tencanho
+            // 
+            this.tencanho.DataPropertyName = "tencanho";
+            this.tencanho.HeaderText = "Tên căn hộ";
+            this.tencanho.Name = "tencanho";
+            // 
+            // dientich
+            // 
+            this.dientich.DataPropertyName = "dientich";
+            this.dientich.HeaderText = "Diện tích";
+            this.dientich.Name = "dientich";
+            // 
+            // gia
+            // 
+            this.gia.DataPropertyName = "gia";
+            this.gia.HeaderText = "Giá";
+            this.gia.Name = "gia";
+            // 
+            // ngaythanhtoan
+            // 
+            this.ngaythanhtoan.DataPropertyName = "ngaythanhtoan";
+            this.ngaythanhtoan.HeaderText = "Ngày thanh toán";
+            this.ngaythanhtoan.Name = "ngaythanhtoan";
+            // 
+            // tenhd
+            // 
+            this.tenhd.DataPropertyName = "tenhd";
+            this.tenhd.HeaderText = "Tên hợp đồng";
+            this.tenhd.Name = "tenhd";
             // 
             // thongkekhachhangdamuacanho
             // 
@@ -174,5 +239,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txttong;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvthongke;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenkh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cmnd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tencanho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dientich;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaythanhtoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenhd;
     }
 }

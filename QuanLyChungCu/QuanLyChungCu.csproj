@@ -68,6 +68,18 @@
       <DependentUpon>Canho.cs</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
+    <Compile Include="dangki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dangki.Designer.cs">
+      <DependentUpon>dangki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dangnhap.Designer.cs">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dich vu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,8 +172,26 @@
     <Compile Include="Timkiemnhanvien.Designer.cs">
       <DependentUpon>Timkiemnhanvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="tracuukhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tracuukhachhang.Designer.cs">
+      <DependentUpon>tracuukhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tracuunhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracuunhanvien.Designer.cs">
+      <DependentUpon>Tracuunhanvien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Canho.resx">
       <DependentUpon>Canho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dangki.resx">
+      <DependentUpon>dangki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dangnhap.resx">
+      <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dich vu.resx">
       <DependentUpon>Dich vu.cs</DependentUpon>
@@ -216,6 +246,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Timkiemnhanvien.resx">
       <DependentUpon>Timkiemnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tracuukhachhang.resx">
+      <DependentUpon>tracuukhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracuunhanvien.resx">
+      <DependentUpon>Tracuunhanvien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
