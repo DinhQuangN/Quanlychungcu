@@ -100,7 +100,7 @@
             this.kryptonButton1.Name = "kryptonButton1";
             this.kryptonButton1.Size = new System.Drawing.Size(164, 43);
             this.kryptonButton1.TabIndex = 3;
-            this.kryptonButton1.Values.Text = "Xuất execl";
+            this.kryptonButton1.Values.Text = "Xuất excel";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // panel2

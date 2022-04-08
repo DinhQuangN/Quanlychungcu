@@ -44,6 +44,7 @@ namespace QuanLyChungCu
             txtgia.Text = "";
             txtmach.Text = "";
             txttinhtrang.Text = "";
+            txtdt.Text = "";
         }
 
         private void kryptonButton6_Click(object sender, EventArgs e)

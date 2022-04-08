@@ -31,15 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.dgvthanhtoan = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbbkh = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.txtten = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tenkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaythanhtoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tengiaodich = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +38,14 @@
             this.anh = new System.Windows.Forms.DataGridViewImageColumn();
             this.dientich = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.kryptonButton4 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbbkh = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.txtten = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvthanhtoan)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -85,6 +84,50 @@
             this.dgvthanhtoan.Size = new System.Drawing.Size(506, 450);
             this.dgvthanhtoan.TabIndex = 0;
             // 
+            // tenkh
+            // 
+            this.tenkh.DataPropertyName = "tenkh";
+            this.tenkh.HeaderText = "Tên khách hàng";
+            this.tenkh.Name = "tenkh";
+            // 
+            // ngaythanhtoan
+            // 
+            this.ngaythanhtoan.DataPropertyName = "ngaythanhtoan";
+            this.ngaythanhtoan.HeaderText = "Ngày thanh toán";
+            this.ngaythanhtoan.Name = "ngaythanhtoan";
+            // 
+            // tengiaodich
+            // 
+            this.tengiaodich.DataPropertyName = "tengiaodich";
+            this.tengiaodich.HeaderText = "Tên giao dịch";
+            this.tengiaodich.Name = "tengiaodich";
+            // 
+            // tencanho
+            // 
+            this.tencanho.DataPropertyName = "tencanho";
+            this.tencanho.HeaderText = "Tên căn hộ";
+            this.tencanho.Name = "tencanho";
+            // 
+            // anh
+            // 
+            this.anh.DataPropertyName = "anh";
+            this.anh.HeaderText = "Ảnh";
+            this.anh.Name = "anh";
+            this.anh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.anh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // dientich
+            // 
+            this.dientich.DataPropertyName = "dientich";
+            this.dientich.HeaderText = "Diện tích";
+            this.dientich.Name = "dientich";
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.DataPropertyName = "thanhtien";
+            this.thanhtien.HeaderText = "Thành tiền";
+            this.thanhtien.Name = "thanhtien";
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.dgvthanhtoan);
@@ -96,21 +139,12 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.kryptonButton1);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(294, 450);
             this.panel1.TabIndex = 4;
-            // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.Location = new System.Drawing.Point(17, 344);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(260, 45);
-            this.kryptonButton1.TabIndex = 37;
-            this.kryptonButton1.Values.Text = "Tìm kiếm thông tin";
             // 
             // groupBox1
             // 
@@ -173,50 +207,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên giao dich";
             // 
-            // tenkh
-            // 
-            this.tenkh.DataPropertyName = "tenkh";
-            this.tenkh.HeaderText = "Tên khách hàng";
-            this.tenkh.Name = "tenkh";
-            // 
-            // ngaythanhtoan
-            // 
-            this.ngaythanhtoan.DataPropertyName = "ngaythanhtoan";
-            this.ngaythanhtoan.HeaderText = "Ngày thanh toán";
-            this.ngaythanhtoan.Name = "ngaythanhtoan";
-            // 
-            // tengiaodich
-            // 
-            this.tengiaodich.DataPropertyName = "tengiaodich";
-            this.tengiaodich.HeaderText = "Tên giao dịch";
-            this.tengiaodich.Name = "tengiaodich";
-            // 
-            // tencanho
-            // 
-            this.tencanho.DataPropertyName = "tencanho";
-            this.tencanho.HeaderText = "Tên căn hộ";
-            this.tencanho.Name = "tencanho";
-            // 
-            // anh
-            // 
-            this.anh.DataPropertyName = "anh";
-            this.anh.HeaderText = "Ảnh";
-            this.anh.Name = "anh";
-            this.anh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.anh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // dientich
-            // 
-            this.dientich.DataPropertyName = "dientich";
-            this.dientich.HeaderText = "Diện tích";
-            this.dientich.Name = "dientich";
-            // 
-            // thanhtien
-            // 
-            this.thanhtien.DataPropertyName = "thanhtien";
-            this.thanhtien.HeaderText = "Thành tiền";
-            this.thanhtien.Name = "thanhtien";
-            // 
             // Thanhtoancanho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -247,7 +237,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvthanhtoan;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private System.Windows.Forms.GroupBox groupBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton4;
         private System.Windows.Forms.Label label2;

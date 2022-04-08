@@ -31,18 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.cbbluachon = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.dgvthongke = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txttong = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.tennv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txttong = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbbluachon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvthongke)).BeginInit();
@@ -71,14 +71,15 @@
             this.panel1.Size = new System.Drawing.Size(973, 100);
             this.panel1.TabIndex = 0;
             // 
-            // kryptonButton1
+            // cbbluachon
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(12, 33);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(164, 43);
-            this.kryptonButton1.TabIndex = 0;
-            this.kryptonButton1.Values.Text = "Xuất execl";
-            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            this.cbbluachon.DropDownWidth = 197;
+            this.cbbluachon.Location = new System.Drawing.Point(755, 51);
+            this.cbbluachon.Name = "cbbluachon";
+            this.cbbluachon.Size = new System.Drawing.Size(197, 25);
+            this.cbbluachon.TabIndex = 2;
+            this.cbbluachon.Text = "kryptonComboBox1";
+            this.cbbluachon.SelectedIndexChanged += new System.EventHandler(this.cbbluachon_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -90,15 +91,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Sắp xếp";
             // 
-            // cbbluachon
+            // kryptonButton1
             // 
-            this.cbbluachon.DropDownWidth = 197;
-            this.cbbluachon.Location = new System.Drawing.Point(755, 51);
-            this.cbbluachon.Name = "cbbluachon";
-            this.cbbluachon.Size = new System.Drawing.Size(197, 25);
-            this.cbbluachon.TabIndex = 2;
-            this.cbbluachon.Text = "kryptonComboBox1";
-            this.cbbluachon.SelectedIndexChanged += new System.EventHandler(this.cbbluachon_SelectedIndexChanged);
+            this.kryptonButton1.Location = new System.Drawing.Point(12, 33);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Size = new System.Drawing.Size(164, 43);
+            this.kryptonButton1.TabIndex = 0;
+            this.kryptonButton1.Values.Text = "Xuất excel";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // dgvthongke
             // 
@@ -117,37 +117,6 @@
             this.dgvthongke.RowTemplate.Height = 24;
             this.dgvthongke.Size = new System.Drawing.Size(973, 407);
             this.dgvthongke.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.txttong);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 466);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(973, 41);
-            this.panel2.TabIndex = 2;
-            // 
-            // txttong
-            // 
-            this.txttong.Dock = System.Windows.Forms.DockStyle.Right;
-            this.txttong.Enabled = false;
-            this.txttong.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttong.Location = new System.Drawing.Point(743, 0);
-            this.txttong.Multiline = true;
-            this.txttong.Name = "txttong";
-            this.txttong.Size = new System.Drawing.Size(230, 41);
-            this.txttong.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(661, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 28);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tổng";
             // 
             // tennv
             // 
@@ -178,6 +147,37 @@
             this.thanhtien.DataPropertyName = "thanhtien";
             this.thanhtien.HeaderText = "Lương nhân viên";
             this.thanhtien.Name = "thanhtien";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.txttong);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 466);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(973, 41);
+            this.panel2.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(661, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 28);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Tổng";
+            // 
+            // txttong
+            // 
+            this.txttong.Dock = System.Windows.Forms.DockStyle.Right;
+            this.txttong.Enabled = false;
+            this.txttong.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttong.Location = new System.Drawing.Point(743, 0);
+            this.txttong.Multiline = true;
+            this.txttong.Name = "txttong";
+            this.txttong.Size = new System.Drawing.Size(230, 41);
+            this.txttong.TabIndex = 0;
             // 
             // Thongkeluongnhanvie
             // 

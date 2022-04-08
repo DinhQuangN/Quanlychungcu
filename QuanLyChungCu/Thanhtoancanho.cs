@@ -23,10 +23,10 @@ namespace QuanLyChungCu
             loaddata();
             commboboxkh();
         }
-        public static string makh = "";
+        public static string Makh = "";
         public void loaddata()
         {
-            string sql = "SELECT dbo.khachhang.tenkh, dbo.thanhtoan.tengiaodich, dbo.thanhtoan.ngaythanhtoan, dbo.canho.tencanho, dbo.canho.dientich, dbo.canho.anh,thanhtien=dbo.canho.gia FROM dbo.canho INNER JOIN dbo.khachhang ON dbo.canho.makh = dbo.khachhang.makh INNER JOIN dbo.thanhtoan ON dbo.khachhang.makh = dbo.thanhtoan.makh";
+            string sql = "SELECT dbo.khachhang.tenkh, dbo.thanhtoan.ngaythanhtoan, dbo.thanhtoan.tengiaodich, dbo.canho.tencanho, dbo.canho.anh, dbo.canho.dientich,thanhtien = dbo.canho.gia FROM dbo.khachhang INNER JOIN dbo.thanhtoan ON dbo.khachhang.makh = dbo.thanhtoan.makh INNER JOIN dbo.hopdong ON dbo.khachhang.makh = dbo.hopdong.makh INNER JOIN dbo.canho ON dbo.hopdong.macanho = dbo.canho.macanho";
             DataTable mytable = Connection.select(sql);
             dgvthanhtoan.DataSource = mytable;
         }
@@ -41,14 +41,14 @@ namespace QuanLyChungCu
 
         private void kryptonButton4_Click(object sender, EventArgs e)
         {
-            string sql = "insert into thanhtoan(tengiaodich,ngaythanhtoan,makh) values('" + txtten.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd HH:MM:ss") + "','" + makh + "')";
+            string sql = "insert into thanhtoan(tengiaodich,ngaythanhtoan,makh) values('" + txtten.Text + "','" + DateTime.Now.ToString("yyyy-MM-dd HH:MM:ss") + "','" + Makh + "')";
             Connection.inupde(sql);
             loaddata();
         }
 
         private void cbbkh_SelectedIndexChanged(object sender, EventArgs e)
         {
-            makh = cbbkh.SelectedValue.ToString();
+            Makh = cbbkh.SelectedValue.ToString();
         }
     }
 }

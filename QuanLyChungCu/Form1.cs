@@ -133,5 +133,15 @@ namespace QuanLyChungCu
         {
             AbrirFormularioTC<tracuukhachhang>();
         }
+
+        private void kryptonButton11_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Thanhtoan>();
+        }
+
+        private void kryptonButton12_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Thanhtoancanho>();
+        }
     }
 }

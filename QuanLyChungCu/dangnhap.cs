@@ -43,5 +43,10 @@ namespace QuanLyChungCu
             dangki dk = new dangki();
             dk.Show();
         }
+
+        private void kryptonButton2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
